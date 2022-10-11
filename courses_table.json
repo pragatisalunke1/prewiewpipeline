@@ -1,0 +1,32 @@
+{
+  "TableProperties" : {
+    "number_of_columns": 3,
+    "number_of_records": 1000,
+    "providers": [ "standard"],
+    "columns_list": [
+      {
+        "name": "course_id",
+        "provider": "standard",
+        "type": "int",
+        "min": 1,
+        "max": 5
+      },
+      {
+        "name": "course_name",
+        "provider": "standard",
+        "type": "String",
+        "options": ["java", "QA", "python", "Angular", "Management"]
+      },
+      {
+        "name": "student_id",
+        "provider": "standard",
+        "type": "int",
+         "table_name": "student_table",
+        "foreign_key": "student_id"
+      }
+
+    ],
+    "output_format": "csv",
+    "location": "/output/"
+  }
+}

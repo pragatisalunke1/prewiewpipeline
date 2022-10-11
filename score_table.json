@@ -1,0 +1,42 @@
+{
+  "TableProperties" : {
+    "number_of_columns": 3,
+    "number_of_records": 1000,
+    "providers": [ "standard"],
+    "columns_list": [
+
+      {
+        "name": "score",
+        "provider": "standard",
+        "type": "int",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "name": "student_id",
+        "provider": "standard",
+        "type": "int",
+         "table_name": "student_table",
+        "foreign_key": "student_id"
+      },
+      ,
+      {
+        "name": "roll.no",
+        "provider": "standard",
+        "type": "int",
+         "table_name": "exam_table",
+        "foreign_key": "exam_id"
+      },
+      {
+        "name": "course_id",
+        "provider": "standard",
+        "type": "int",
+         "table_name": "courses_table",
+        "foreign_key": "course_id"
+      }
+
+    ],
+    "output_format": "csv",
+    "location": "/output/"
+  }
+}

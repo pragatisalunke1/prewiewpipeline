@@ -1,0 +1,34 @@
+{
+  "TableProperties" : {
+    "number_of_columns": 5,
+    "number_of_records": 1000,
+    "providers": ["profile", "standard", "credit"],
+    "columns_list": [
+      {
+        "name": "student_id",
+        "provider": "standard",
+        "type": "Integer",
+        "min": 1,
+        "max": 10000
+      },
+      {
+        "name": "student_name",
+        "provider": "profile",
+        "type": "String"
+      },
+      {
+        "name": "gender",
+        "provider": "profile",
+        "type": "String"
+      },
+      {
+        "name": "email",
+        "provider": "profile",
+        "type": "String"
+
+      }
+    ],
+    "output_format": "csv",
+    "location": "/output/"
+  }
+}

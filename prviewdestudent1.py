@@ -15,8 +15,8 @@ def create_spark_session():
            .config('spark.hadoop.fs.s3a.impl', 'org.apache.hadoop.fs.s3a.S3AFileSystem')\
            .master("local").appName("Preview data pipeline")\
            .getOrCreate()
-        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.access.key", "AKIA3AJ3KGNKNG6KI3MO")
-        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.secret.key", "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")
+        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.access.key", "xxxxxx")
+        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.secret.key", "xxxx")
 
         return spark
 

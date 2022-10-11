@@ -10,8 +10,8 @@ def create_spark_session():
         spark = SparkSession \
            .builder.config("spark.jars", "/home/pragatisalunke/mysql-connector-java-8.0.23.jar,/home/pragatisalunke/hadoop-aws-3.2.3.jar,/home/pragatisalunke/aws-java-sdk-bundle-1.11.375.jar")\
            .config('spark.hadoop.fs.s3a.aws.credentials.provider', 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider')\
-           .config('spark.hadoop.fs.s3a.access.key', 'AKIA3AJ3KGNKNG6KI3MO')\
-           .config('spark.hadoop.fs.s3a.secret.key', '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')\
+           .config('spark.hadoop.fs.s3a.access.key', 'xxxx')\
+           .config('spark.hadoop.fs.s3a.secret.key', 'xxxxxx')\
            .config('spark.hadoop.fs.s3a.impl', 'org.apache.hadoop.fs.s3a.S3AFileSystem')\
            .master("local").appName("Preview data pipeline")\
            .getOrCreate()
